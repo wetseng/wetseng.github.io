@@ -1,35 +1,50 @@
 <!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <!-- A Header with your name -->
-  <h1>Wayne Tseng</h1>
-  <!-- An image that you would like, maybe a headshot -->
-  <img scr='' alt='headshot'>
-  <!-- A couple of paragraphs about yourself -->
-  <p>I am an Electrical Engineer</p>
-  <!-- An unordered list, containing your email, github, and linkedin links -->
-  <ul>
-    <li>Email: <a href='mailto:waynetseng25@gmail.com'>waynetseng25@gmail.com</a></li>
-  </ul>
-  <!-- A table with some of your favorite things -->
-  <table>
-    <tr>
-      <th>Movies</th>
-      <th>Hobby</th>
-    </tr>
-    <tr>
-      <td>The Matrix</td>
-      <td>Hiking</td>
-    </tr>
-  </table>
-  <!-- Bonus link to last class page -->
+
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Wayne Tseng</h2>
+        <img id="bio-image" src="https://media-exp1.licdn.com/dms/image/C5603AQEqLAUAb-8DSA/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=Phh0s2mtXJ297imXZGjvJmgsSi25vEgwF5Tmx8pbFrc0" alt="Wayne Tseng">
+      </section>
+      <p>
+        Hello, I am the Electrical Engineer.
+      </p><p>
+        I am extremely interested in gaining experience in the field of Engineering. The classes I have pursued for my undergraduate degree, such as, Math, Physics, Computer Science, Electron, and Computer Information System have given me a solid academic foundation in this area.
+      </p><p>
+        From my past internship and work experience provide me with the opportunity to apply this knowledge in the field of Engineering, as well as develop the communication, problem solving, and numeracy skills I have acquired.
+      </p><p>
+        I am looking to become an engineer role that will challenge me and allow me to be the best I can while I help the people around me being their best.
+      </p><p>
+        I love my profession. I love being an engineer, talking about engines, machines, going to site project and learn new experience.
+      </p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:weitseng1418@gmail.com">weitseng1418@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/wetseng/">wetseng</a></li>
+        <li><strong>Portfolio:</strong> <a href="http://waynetseng.weebly.com/project-showcase.html">Portfolio/project-showcase</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
 </html>
-
